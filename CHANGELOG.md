@@ -1,16 +1,32 @@
-# Change Log
+# Changelog
 
-## v[Unreleased]
+Todas as alterações deste projeto seguem o padrão [Keep a Changelog](https://keepachangelog.com/pt-BR/1.0.0/).
 
-### Melhorias
+Este projeto segue [versionamento semântico](https://semver.org/lang/pt-BR/).
 
-- [PROBAT] visualizador de cobertura de código de uma ou mais execuções de testes;
-- [PROBAT] gerador automático de exemplos de código de testes;
+## Unreleased
 
-## v[1.0.0]
+### Adicionado
 
-### Melhorias
+_Ainda não há mudanças registradas._
 
-- Criação da extensão;
-- Integração nativa com tds-vscode e language server para obter a conexão já existente com aplicações do AppServer;
-- Suporte a l10n para _pt-br_, _en-us_, _es_ e _rus_;
+## v1.0.1 - 2025-06-11
+
+### Adicionado
+
+- PROBAT: Visualizador de cobertura de código para uma ou múltiplas  
+  execuções de testes
+- PROBAT: Gerador automático de exemplos de código de testes
+
+## v1.0.0 - 2025-03-17
+
+### Adicionado
+
+- Criação da extensão
+- Integração nativa com o tds-vscode e Language Server, permitindo reutilizar  
+  conexões existentes com aplicações no AppServer
+- Suporte a localização (l10n) para os idiomas:  
+  - português (pt-BR),  
+  - inglês (en-US),  
+  - espanhol (es) e  
+  - russo (ru)
