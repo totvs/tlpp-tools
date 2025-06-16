@@ -1,3 +1,9 @@
+---
+title: "Changelog"
+layout: default
+nav_order: 99
+---
+
 # Changelog
 
 Todas as alterações deste projeto seguem o padrão [Keep a Changelog](https://keepachangelog.com/pt-BR/1.0.0/).

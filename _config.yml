@@ -1,0 +1,101 @@
+# _config.yml
+title: "TLPP Tools"
+description: "Documentação oficial da extensão TOTVS.tlpp-tools para VSCode"
+
+# Theme
+remote_theme: just-the-docs/just-the-docs
+
+# Plugins
+plugins:
+  - jekyll-remote-theme
+  - jekyll-feed
+  - jekyll-sitemap
+
+# TOTVS Custom Color Scheme
+color_scheme: totvs
+
+logo: "/assets/images/logo-totvs-branco.png"
+
+# Just the Docs theme configuration
+search_enabled: true
+search:
+  heading_level: 2
+  previews: 2
+  preview_words_before: 3
+  preview_words_after: 3
+  tokenizer_separator: /[\s/]+/
+  rel_url: true
+  button: false
+
+# Navigation Structure
+nav_sort: case_insensitive
+nav_external_links:
+  - title: "Aprenda TLPP"
+    url: "https://tdn.totvs.com/pages/viewpage.action?pageId=334340072"
+    hide_icon: false
+    opens_in_new_tab: true
+  - title: "GitHub tlpp-tools"
+    url: "https://github.com/totvs/tlpp-tools"
+    hide_icon: false
+    opens_in_new_tab: true
+  - title: "Reportar Bug"
+    url: "https://github.com/totvs/tlpp-tools/issues/new?assignees=&labels=bug&type=Bug&template=bug_report.md&title="
+    hide_icon: false
+    opens_in_new_tab: true
+  - title: " Sugerir Melhoria"
+    url: "https://github.com/totvs/tlpp-tools/issues/new?assignees=&labels=enhancement&type=Feature&template=feature_request.md&title="
+    hide_icon: false
+    opens_in_new_tab: true
+
+# Footer content
+footer_content: "© TOTVS - <a href=\"https://www.totvs.com\">totvs.com</a>"
+
+# GitHub Pages
+url: "https://totvs.github.io"
+baseurl: "/tlpp-tools"
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+kramdown:
+  syntax_highlighter: rouge
+  syntax_highlighter_opts:
+    css_class: 'highlight'
+    span:
+      line_numbers: false
+
+# Collections (if you want to organize content)
+collections:
+  docs:
+    permalink: "/:collection/:name/"
+    output: true
+
+# Exclude files from processing
+exclude:
+  - .sass-cache/
+  - .jekyll-cache/
+  - gemfiles/
+  - Gemfile
+  - Gemfile.lock
+  - node_modules/
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+
+# Callout configuration for TOTVS-styled callouts
+callouts:
+  highlight:
+    color: blue
+  important:
+    title: Important
+    color: blue
+  new:
+    title: New
+    color: green
+  note:
+    title: Note
+    color: purple
+  warning:
+    title: Warning
+    color: yellow

@@ -1,0 +1,299 @@
+// TOTVS Custom Color Scheme for Just the Docs
+// ==========================================
+// Primary TOTVS Colors
+$totvs-dark-blue: #002233;    // Azul escuro TOTVS
+$totvs-blue: #00DBFF;         // Azul claro TOTVS
+
+// Neutral TOTVS Colors
+$totvs-dark-gray: #363636;    // Cor principal - cinza escuro
+$totvs-white: #ffffff;        // Branco puro
+$totvs-light-gray: #f5f5f5;   // Cinza claro para backgrounds
+
+// Secondary TOTVS Colors
+$totvs-purple: #A44DFF;       // Roxo TOTVS
+$totvs-green: #00FFD4;        // Verde TOTVS
+$totvs-lemon: #D9FF65;        // Limão TOTVS
+$totvs-orange: #FF8900;       // Laranja TOTVS
+$totvs-pink: #FF009E;         // Rosa TOTVS
+
+// Complementary Colors
+$totvs-red: #dc3545;          // Vermelho para alertas
+$totvs-yellow: #ffc107;       // Amarelo para warnings
+$totvs-teal: #20c997;         // Verde água
+
+// Neutral Shades
+$totvs-gray-100: #f8f9fa;
+$totvs-gray-200: #e9ecef;
+$totvs-gray-300: #dee2e6;
+$totvs-gray-400: #ced4da;
+$totvs-gray-500: #adb5bd;
+$totvs-gray-600: #6c757d;
+$totvs-gray-700: #495057;
+$totvs-gray-800: #343a40;
+$totvs-gray-900: #212529;
+
+// ==========================================
+// TOTVS Color Scheme Variables
+// ==========================================
+
+// Background Colors
+$body-background-color: $totvs-white;
+$sidebar-color: $totvs-dark-blue;
+$search-background-color: $totvs-white;
+$table-background-color: $totvs-white;
+$code-background-color: $totvs-gray-100;
+
+// Text Colors
+$body-text-color: $totvs-dark-gray;
+$body-heading-color: $totvs-dark-gray;
+$nav-child-link-color: $totvs-gray-700;
+$search-result-preview-color: $totvs-gray-600;
+
+// Link Colors
+$link-color: $totvs-purple;
+$btn-primary-color: $totvs-blue;
+$base-button-color: $totvs-blue;
+
+// Navigation
+$nav-list-item-color: $totvs-light-gray;
+$nav-list-item-color-hover: $totvs-white;
+$nav-list-item-background-hover: rgba($totvs-white, 0.1);
+$nav-list-item-color-selected: $totvs-dark-blue;
+
+// Border Colors
+$border-color: $totvs-gray-300;
+$table-border-color: $totvs-gray-300;
+$code-border-color: $totvs-gray-300;
+
+// Focus and Hover States
+$focus-color: $totvs-blue;
+$btn-primary-color-hover: darken($totvs-blue, 10%);
+
+// Search
+$search-background-color-focus: $totvs-white;
+$search-border-color: $totvs-gray-300;
+$search-border-color-focus: $totvs-blue;
+
+// Code Syntax Highlighting
+$code-linenumber-color: $totvs-gray-500;
+
+// Feedback Colors
+$feedback-color-success: $totvs-green;
+$feedback-color-error: $totvs-red;
+$feedback-color-warning: $totvs-yellow;
+$feedback-color-info: $totvs-blue;
+
+// Custom TOTVS Accent Colors for special elements
+$totvs-accent-primary: $totvs-purple;
+$totvs-accent-secondary: $totvs-green;
+$totvs-accent-tertiary: $totvs-blue;
+
+// ==========================================
+
+.site-header {
+  background-color: $totvs-dark-blue !important;
+  border-bottom: 3px solid $totvs-purple;
+}
+
+.site-title {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: $totvs-white !important;
+  font-weight: 600;
+
+  img.site-logo {
+    height: 40px;
+    display: inline-block;
+  }
+
+  &:hover {
+    background-image: initial !important;
+  }
+}
+
+// ==========================================
+
+.btn-totvs-primary {
+  background-color: $totvs-blue;
+  border-color: $totvs-blue;
+  color: $totvs-white;
+  
+  &:hover {
+    background-color: darken($totvs-blue, 10%);
+    border-color: darken($totvs-blue, 10%);
+  }
+}
+
+.btn-totvs-secondary {
+  background-color: $totvs-green;
+  border-color: $totvs-green;
+  color: $totvs-white;
+  
+  &:hover {
+    background-color: darken($totvs-green, 10%);
+    border-color: darken($totvs-green, 10%);
+  }
+}
+
+// ==========================================
+
+.callout {
+  &.callout-info {
+    border-left-color: $totvs-blue;
+    background-color: rgba($totvs-blue, 0.05);
+  }
+  
+  &.callout-warning {
+    border-left-color: $totvs-yellow;
+    background-color: rgba($totvs-yellow, 0.05);
+  }
+  
+  &.callout-success {
+    border-left-color: $totvs-green;
+    background-color: rgba($totvs-green, 0.05);
+  }
+  
+  &.callout-danger {
+    border-left-color: $totvs-red;
+    background-color: rgba($totvs-red, 0.05);
+  }
+}
+
+// ==========================================
+
+.nav-list-link {
+  color: $totvs-light-gray !important; // #f5f5f5
+  text-decoration: none !important;
+  
+  &:hover {
+    color: $totvs-white !important; // #ffffff
+    background: rgba($totvs-white, 0.1) !important;
+    text-decoration: none !important;
+  }
+  
+  &.active {
+    color: $totvs-white !important;
+    background: rgba($totvs-blue, 0.2) !important;
+    border-left: 4px solid $totvs-blue !important;
+    font-weight: 600 !important;
+    text-decoration: none !important;
+  }
+}
+
+.nav-list {
+  .nav-list-link {
+    color: $totvs-light-gray !important;
+    
+    &:hover {
+      color: $totvs-white !important;
+      background: rgba($totvs-white, 0.1) !important;
+    }
+    
+    &.active {
+      color: $totvs-white !important;
+      background: rgba($totvs-blue, 0.2) !important;
+      border-left: 4px solid $totvs-blue !important;
+      font-weight: 600 !important;
+    }
+  }
+}
+
+.nav-list-child {
+  .nav-list-link {
+    color: rgba($totvs-light-gray, 0.9) !important;
+    
+    &:hover {
+      color: $totvs-white !important;
+      background: rgba($totvs-white, 0.08) !important;
+    }
+    
+    &.active {
+      color: $totvs-white !important;
+      background: rgba($totvs-white, 0.15) !important;
+      border-left: 3px solid $totvs-white !important;
+    }
+  }
+}
+
+.nav-list .nav-list-expander {
+  color: $totvs-light-gray !important;
+  
+  svg {
+    fill: $totvs-light-gray !important;
+    color: $totvs-light-gray !important;
+  }
+  
+  &:hover {
+    color: $totvs-white !important;
+    background-color: rgba($totvs-white, 0.1) !important;
+    
+    svg {
+      fill: $totvs-white !important;
+      color: $totvs-white !important;
+    }
+  }
+  
+  &.nav-list-expander-expanded {
+    color: $totvs-white !important;
+    
+    svg {
+      fill: $totvs-white !important;
+      color: $totvs-white !important;
+    }
+  }
+}
+
+.nav-list-item {
+  .nav-list-expander {
+    color: $totvs-light-gray !important;
+    
+    svg {
+      fill: $totvs-light-gray !important;
+    }
+    
+    &:hover {
+      color: $totvs-white !important;
+      
+      svg {
+        fill: $totvs-white !important;
+      }
+    }
+  }
+}
+
+// ==========================================
+
+.side-bar {
+  .site-footer {
+    background-color: $totvs-dark-blue !important;
+    color: $totvs-white !important;
+    border-top: 1px solid rgba($totvs-light-gray, 0.3);
+    padding-left: 0.75rem;
+    text-align: left !important;
+    
+    a {
+      color: $totvs-white !important;
+      text-decoration: none !important;
+      text-align: left !important;
+      
+      &:hover {
+        color: $totvs-light-gray !important;
+        text-decoration: none !important;
+      }
+    }
+    
+  }
+}
+
+.side-bar {
+  background-color: $totvs-dark-blue !important;
+ 
+  a {
+    color: $totvs-white !important;
+    
+    &:hover {
+      color: $totvs-purple !important;
+    }
+  }
+}
