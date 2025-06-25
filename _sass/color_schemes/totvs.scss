@@ -1,4 +1,4 @@
-@use "sass:color";
+//@use "sass:color";
 
 // TOTVS Custom Color Scheme for Just the Docs
 // ==========================================
@@ -69,7 +69,8 @@ $code-border-color: $totvs-gray-300;
 
 // Focus and Hover States
 $focus-color: $totvs-blue;
-$btn-primary-color-hover: color.scale($totvs-blue, $lightness: -10%);
+$btn-primary-color-hover: darken($totvs-blue, 10%);
+//$btn-primary-color-hover: color.scale($totvs-blue, $lightness: -10%);
 
 // Search
 $search-background-color-focus: $totvs-white;
@@ -122,8 +123,10 @@ $totvs-accent-tertiary: $totvs-blue;
   color: $totvs-white;
   
   &:hover {
-    background-color: color.scale($totvs-blue, $lightness: -10%);
-    border-color: color.scale($totvs-blue, $lightness: -10%);
+    background-color: darken($totvs-blue, 10%);
+    //background-color: color.scale($totvs-blue, $lightness: -10%);
+    border-color: darken($totvs-blue, 10%);
+    //border-color: color.scale($totvs-blue, $lightness: -10%);
   }
 }
 
@@ -133,8 +136,10 @@ $totvs-accent-tertiary: $totvs-blue;
   color: $totvs-white;
   
   &:hover {
-    background-color: color.scale($totvs-green, $lightness: -10%);
-    border-color: color.scale($totvs-green, $lightness: -10%);
+    background-color: darken($totvs-green, 10%);
+    //background-color: color.scale($totvs-green, $lightness: -10%);
+    border-color: darken($totvs-green, 10%);
+    //border-color: color.scale($totvs-green, $lightness: -10%);
   }
 }
 
