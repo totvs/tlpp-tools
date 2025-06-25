@@ -2,20 +2,23 @@
 layout: default
 title: "Instalação"
 parent: "Primeiros Passos"
-nav_order: 1
+nav_order: 2
 ---
-
+<!-- markdownlint-disable MD025 MD013-->
 # Instalação
+
+✨ Em breve! Nossa extensão estará disponível oficialmente no marketplace do VSCode. Fique ligado e aproveite todas as novidades que estamos preparando para você!
+{: .note }
 
 ## Via Marketplace
 
-Em breve a extensão será oficialmente disponibilizada pelo marketplace do VSCode.
+Esta extensão está disponível exclusivamente através do Marketplace do VSCode.
 
-<!-- Esta extensão somente é disponibilizada pelo marketplace do VSCode.
+1. Acesse a página da extensão no [Marketplace TOTVS.tlpp-tools](https://marketplace.visualstudio.com/items?itemName=TOTVS.tlpp-tools).
+2. Clique em Install para adicionar ao seu VSCode.
 
-1. Acesse o [Marketplace](https://marketplace.visualstudio.com/items?itemName=TOTVS.tlpp-tools).
-2. Clique em **Install**. -->
+## Dependências Necessárias
 
-## Dependências
+Para o funcionamento correto desta extensão, é obrigatório ter instalada a extensão:
 
-- Extensão: [TOTVS.tds-vscode](https://marketplace.visualstudio.com/items?itemName=TOTVS.tds-vscode)
+- [TOTVS.tds-vscode](https://marketplace.visualstudio.com/items?itemName=TOTVS.tds-vscode)

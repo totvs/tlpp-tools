@@ -3,13 +3,18 @@ title: "Home"
 layout: default
 nav_order: 1
 ---
+<!-- markdownlint-disable MD025 MD013-->
+# Bem-vindo à documentação da extensão TOTVS.tlpp-tools
 
-# Manual – Extensão VSCode TLPP & tlppCore Tools
+A **TOTVS.tlpp-tools** é uma extensão completa para **VSCode** que potencializa o desenvolvimento em linguagem TOTVS TLPP, oferecendo ferramentas avançadas de produtividade e integração com os módulos do tlppCore.
 
-Bem-vindo à documentação oficial da extensão **TLPP & tlppCore Tools** para o  
-VSCode.
+## O que você pode fazer com esta extensão
 
-Aqui você encontrará tudo o que precisa para instalar, configurar e  aproveitar  
-ao máximo os recursos da extensão.
+- Integração direta com o ambiente TOTVS através do `TDS-vscode`
+- Acesso à recursos do **PROBAT**
+- E novas funcionalidades sendo desenvolvidas continuamente
 
-> EM DESENVOLVIMENTO
+Aqui você encontrará guias completos de instalação, configuração, exemplos práticos e todas as funcionalidades disponíveis para maximizar sua produtividade no desenvolvimento TOTVS.
+
+{: .note }
+**Em breve!** Nossa extensão estará disponível oficialmente no marketplace do VSCode. Fique ligado e aproveite todas as novidades que estamos preparando para você!

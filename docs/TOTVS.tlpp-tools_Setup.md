@@ -2,13 +2,12 @@
 layout: default
 title: "Configuração"
 parent: "Primeiros Passos"
-nav_order: 3
+nav_order: 5
 ---
-
+<!-- markdownlint-disable MD025 MD013-->
 # Configuração
 
-Você pode personalizar o comportamento da extensão usando o arquivo  
-`settings.json` do VSCode.
+Você pode personalizar o comportamento da extensão usando o arquivo `settings.json` do VSCode.
 
 ## Opções disponíveis
 
